@@ -15,16 +15,16 @@
 					<img src="img/Hotel.jpg" alt="Hotel Image Missing" />
 				</div>
 				<div class="right">
-					<form action="#" method="post">
+					<form id="userform" action="#" method="post">
 						<div class="form-col">
-							<span>CHECK IN</span><input type="text"  value="CHECK IN" >
+							<span>CHECK IN</span><input type="date"  value="CHECK IN" >
 						</div>
 						<div class="form-col">
-							<span>CHECK OUT</span><input type="text"  value="CHECK OUT" >
+							<span>CHECK OUT</span><input type="date"  value="CHECK OUT" >
 						</div>
 						<div class="form-col">
 							<span>ROOM TYPE</span>
-							<select class="selectpicker">
+							<select name="selectRoom" form="userform">
 								<option disabled selected>ROOM TYPE</option>
 								<option>Regular</option>
 								<option>Suite</option>
@@ -35,7 +35,7 @@
 						</div>
 						<div class="form-col">
 							<span>ADULTS</span>
-							<select class="selectpicker">
+							<select name="selectAdult" form="userform">
 								<option disabled selected>ADULTS</option>
 								<option>0</option>
 								<option>1</option>
@@ -46,7 +46,7 @@
 						</div>
 						<div class="form-col">
 							<span>KIDS</span>
-							<select class="selectpicker">
+							<select name="selectKid" form="userform">
 								<option  disabled selected>KIDS</option>
 								<option>0</option>
 								<option>1</option>
@@ -56,7 +56,7 @@
 							</select>
 						</div>
 						<div class="form-col">
-							<button type="submit" class="btn btn-primary">BOOK NOW</button>
+							<button type="submit" >BOOK NOW</button>
 						</div>
 					</form>
 				</div>			
