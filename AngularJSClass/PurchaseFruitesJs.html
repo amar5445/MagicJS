@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html >
+<head> 
+	<meta charset="utf-8">
+	<title>AmarWebPage</title
+	<!-- Script for the event handlers -->
+
+	<script type = "text/javascript">
+		// The event handler function to compute the cost
+
+		function computeCost() {
+			var orange = document.getElementById("orange").value;
+			var watermilon = document.getElementById("watermilon").value;
+			var pineapple = document.getElementById("pineapple").value;
+			// Compute the cost
+			document.getElementById("cost").value = orange * 1.99 + watermilon * 4.99 + pineapple * 4.69 ;
+		} 
+
+		function validateForm() {
+			var x = document.forms["myForm"]["cost"].value;
+			if (x == null || x == "" || x == '0') {
+				alert("No Fruit selected to order.\nplease select any fruit");
+				return false;
+			}
+		}
+	</script>
+</head>
+	<body>
+		<h1>
+			Fresh Fruit Online Order form
+		</h1>
+		<form id="myForm" action=" " onsubmit="return validateForm()" >
+
+			<table border="1" cellspacing="1" cellpadding="5">
+				<tr>
+					<td>Fruit</td>
+					<td>Price</td>
+					<td>Quantity</td>      
+				</tr>
+				<tr>
+					<td>orange</td>
+					<td>$1.99/lb</td>
+					<td> <input type = "text" id = "orange" size ="3" /> </td>
+				</tr>
+				<tr>
+					<td>watermilon</td>
+					<td>$4.99/lb</td>
+					<td> <input type = "text" id = "watermilon" size ="3" /> </td>
+				</tr>
+				<tr>
+					<td>pineapple</td>
+					<td>$4.69/lb</td>
+					<td> <input type = "text" id = "pineapple" size ="3" /> </td>
+				</tr>
+			</table>
+			<br />
+			<input type = "button" value = "Total Cost" onclick="computeCost();" align="right"/>
+			<input type = "text" id = "cost" size ="5" align="right"/>
+
+			<br />
+			<input type = "submit" value = "Order Now" />
+			<input type = "reset" value = "Clear" />
+		</form>
+	</body>
+</html>
+
