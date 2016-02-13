@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>AmarWebPage</title>
+		<script type="text/javascript">
+			var setIntervalID = window.setInterval("setClock()",1000);
+			function setClock()
+			{
+			var now = new Date();
+			document.getElementById("theclock").value=now.toLocaleTimeString();
+			}
+			function stopClock()
+			{
+			clearIntervalID=window.clearInterval(setIntervalID);
+			}
+			function startClock()
+			{			
+			setIntervalID=window.setInterval("setClock()",1000);
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" size= "60" id="theclock" />
+		
+		<button onclick="stopClock()">Stop</button>
+		<button onclick="startClock()">Start</button>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+		<meta charset="utf-8">
+		<title>AmarModified</title>		
+	</head>
+	<body> 		
+		<p>click the button .</p>  
+		<button id="myBtn2" >Favourite Fruits</button>
+		<button id="myBtn1" >Total Qty</button>				
+		<p id="kavs"></p>
+		<p id="kee1"></p>	
+		<script> 
+			var i = 0; 
+			var text = " "; 
+			document.getElementById("myBtn2").addEventListener("click", function() {
+			myFun();
+			});				
+			function myFun(){ 
+				var fruits = ["apple", "banana", "grapes", "mango"]; 
+				
+				while (fruits[i]) { 
+					text += fruits[i] + "<br> "; 
+					i++; 
+				}  	
+				document.getElementById("kavs").innerHTML = text; 			
+			}	  
+	 	</script> 	
+		<script>
+			function myFunction(x,y){
+              return x*y;			   
+			}			
+			document.getElementById("myBtn1").addEventListener("click", function(){ 
+			myFunction(x, y);
+			});
+			document.getElementById("kee1").innerHTML = myFunction(5,7);
+		</script> 		
+	</body> 
+</html>  

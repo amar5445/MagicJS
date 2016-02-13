@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>AmarWebPage</title>
+   </head>
+
+   <body>
+      <h1>Web Form </h1>
+      
+       <form >
+         <p>
+			<label>First name:
+            <input type = "text" id = "firstname" 
+               placeholder = "First name"  /> (First name)
+            </label>
+		</p>
+         <p><label>Last name:
+            <input type = "text" id = "lastname" 
+               placeholder = "Last name"  /> (Last name)
+            </label>
+		</p>
+         <p><label>E-mail address:
+            <input type = "email" id = "email" 
+               placeholder = "name@domain.com" required /> (name@domain.com)
+            </label></p>
+
+         <p>
+            <label>Phone number:
+               <input type = "tel" placeholder = "(###) ###-####" 
+                  pattern = "\(\d{3}\)+\d{3}-\d{4}"  /> 
+                  (###) ###-####
+            </label>
+         </p>
+         <p><label>State:
+             <select>
+               <option value = "AZ">AZ</option>
+               <option value = "CA">CA</option>
+               <option value = "DE">DE</option>
+               <option value = "FL">FL</option>
+               <option value = "GA">GA</option>
+               <option value = "HI">HI</option>
+               <option value = "IL">IL</option>
+               <option value = "MI">MI</option>
+               <option value = "NJ" selected>NJ</option>
+               <option value = "OH">OH</option>
+               <option value = "PA">PA</option>
+               <option value = "VA">VA</option>
+             </select> 
+            </label>
+         </p>
+         <p>
+            <legend>Age group:</legend>            
+				<input type="radio" name="age" id="AG1" value="<20" />
+			<label for="AG1">younger than 20</label>
+				<br><input type="radio" name="age" id="AG2" value="20-40" />
+			<label for="AG2">20-40</label>
+				<br><input type="radio" name="age" id="AG3" value="41-60" />
+			<label for="AG3">41-60</label> 
+				<br><input type="radio" name="age" id="AG4" value=">60" />
+			<label for="AG4">60 or older</label> 
+           
+         </p>
+         <p><label>Membership:  
+			<p>
+				<input type="checkbox"  name="MS" value="AAA " id="AAA" />
+				<label for="AAA"> AAA</label>
+				<input type="checkbox"  name="MS" value="Costco" id="Costco">
+				<label for="Costco"> Costco</label>
+				<input type="checkbox"   name="MS"  value="IEEE" id="IEEE">
+				<label for="IEEE"> IEEE</label>
+				<input type="checkbox"  name="MS" value="ACM" id="ACM">
+				<label for="ACM"> ACM</label> 
+			</p>
+         </p>
+
+         <p><label >Comments:
+        
+         <br><textarea   rows="5" cols="30" >
+ 
+         </textarea>
+
+         </label></p>
+         <p><input type = "submit" value = "Submit" />
+            <input type = "reset" value = "Reset" />
+         </p> 
+
+     </form>
+   </body>
+</html>
+
+
+

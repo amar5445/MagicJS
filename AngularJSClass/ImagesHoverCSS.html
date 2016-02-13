@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ <html >
+<head>
+      <meta charset="utf-8">
+      <title>AmarWebPage</title>
+<style type = "text/css">
+          .under 
+         {
+            position: absolute;
+            left: 50px; top:50px;             	
+         }
+         .middle 
+         {
+            position: absolute;
+            left: 90px; top: 90px;             	
+         }
+         .over 
+         {
+            position: absolute;
+            left: 130px; top: 130px;              	
+         }
+          img
+            {                 
+              transition: transform 0.1s;
+           }            
+         img:hover 
+         {             
+            transform:  scale(2.6, 2.6); 
+			z-index: 1
+         }
+</style>
+   </head>
+   <body>     
+     <img  src = "img/Starbucks.gif"  width = "100" height = "100" class="under"/>     
+     <img  src = "img/Porsche.jpg"  width = "100" height = "100"class="middle"/> 
+     <img  src = "img/Lufthansa.jpg"  width = "100" height = "100" class="over"/>     
+   </body>
+</html>
