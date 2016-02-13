@@ -7,6 +7,7 @@ body{
     background: none repeat scroll 0 0 #ffffff;
     margin: 0 auto;
 	width:1270px;
+	height:1200px;
 }
 .main-header {
     border-bottom: 2px solid #f4f3f3;
@@ -18,7 +19,7 @@ body{
     display: inline-block;
     line-height: 115px;
     margin-top: 30px;
-    text-indent: -9999px;
+    text-indent: -99999px;
     width: 389px;
 }
 .slider {
@@ -34,14 +35,14 @@ body{
 
 .right {
     background: none repeat scroll 0 0 #fafafa;
-    float: left;
+    float: right;
     height:400px;
     padding: 20px;
     width: 399px;
 }
 
 .right span {
-    color: #acacac;
+    color: #000000;
     float: left;
     margin-right: 10px;
     width: 30%;
